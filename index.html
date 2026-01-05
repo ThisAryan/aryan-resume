@@ -32,24 +32,26 @@ h3 { color: #e0f2fe; }
 p, li { line-height: 1.7; }
 ul { margin-left: 20px; }
 
-/* COMMON SECTION STYLE */
-.header, .section {
+/* SECTIONS */
+.header,
+.section {
   background: #020617;
   padding: 25px;
   border-radius: 14px;
   margin-top: 25px;
   box-shadow: 0 0 18px rgba(56,189,248,0.12);
-
-  opacity: 0;
-  transition: all 0.9s ease;
 }
 
-/* ANIMATION DIRECTIONS */
+/* ANIMATION BASE */
+.animate {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
 .fade-up    { transform: translateY(40px); }
 .fade-left  { transform: translateX(-40px); }
 .fade-right { transform: translateX(40px); }
 
-/* WHEN VISIBLE */
 .show {
   opacity: 1;
   transform: translate(0, 0);
@@ -84,8 +86,8 @@ ul { margin-left: 20px; }
 <body>
 <div class="container">
 
-<!-- HEADER -->
-<div class="header fade-up">
+<!-- HEADER (VISIBLE BY DEFAULT) -->
+<div class="header">
   <h1>Aryan Sharma</h1>
   <p><b>Cybersecurity & IT Support Professional</b></p>
   <p>Kanpur, Uttar Pradesh</p>
@@ -94,7 +96,7 @@ ul { margin-left: 20px; }
 </div>
 
 <!-- OBJECTIVE -->
-<div class="section fade-left">
+<div class="section animate fade-left">
 <h2>Career Objective</h2>
 <p>
 Cybersecurity-focused IT professional with hands-on experience in Service Desk operations,
@@ -103,4 +105,33 @@ Actively preparing for SOC and cybersecurity analyst roles.
 </p>
 </div>
 
-<!-- SKILLS -
+<!-- SKILLS -->
+<div class="section animate fade-right">
+<h2>Technical Skills</h2>
+<div class="badges">
+<span>Active Directory</span>
+<span>Windows OS</span>
+<span>Service Desk Operations</span>
+<span>Incident Management</span>
+<span>Access Control</span>
+<span>ITIL Basics</span>
+<span>Networking Fundamentals</span>
+<span>Logs Analysis</span>
+<span>SIEM Fundamentals</span>
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section animate fade-up">
+<h2>Professional Experience</h2>
+
+<h3>HCL Technologies — Experience Analyst</h3>
+<p><i>October 2025 – Present</i></p>
+<ul>
+<li>Handled L1/L2 incidents using HCL’s internal ticketing tool <b>Service Exchange</b>.</li>
+<li>Resolved Active Directory issues including access provisioning and account unlocks.</li>
+<li>Troubleshot Windows OS login failures and endpoint configuration issues.</li>
+<li>Ensured SLA-compliant ticket closure and documentation.</li>
+</ul>
+
+<h3>Telepe
