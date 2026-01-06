@@ -33,8 +33,7 @@ p, li { line-height: 1.7; }
 ul { margin-left: 20px; }
 
 /* SECTIONS */
-.header,
-.section {
+.header, .section {
   background: #020617;
   padding: 25px;
   border-radius: 14px;
@@ -45,13 +44,15 @@ ul { margin-left: 20px; }
 /* ANIMATION BASE */
 .animate {
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: all 0.8s ease-out;
 }
 
-.fade-up    { transform: translateY(40px); }
-.fade-left  { transform: translateX(-40px); }
+/* DIRECTIONS */
+.fade-up { transform: translateY(40px); }
+.fade-left { transform: translateX(-40px); }
 .fade-right { transform: translateX(40px); }
 
+/* WHEN VISIBLE */
 .show {
   opacity: 1;
   transform: translate(0, 0);
@@ -86,16 +87,15 @@ ul { margin-left: 20px; }
 <body>
 <div class="container">
 
-<!-- HEADER (VISIBLE BY DEFAULT) -->
+<!-- HEADER (NO ANIMATION – ALWAYS VISIBLE) -->
 <div class="header">
   <h1>Aryan Sharma</h1>
   <p><b>Cybersecurity & IT Support Professional</b></p>
   <p>Kanpur, Uttar Pradesh</p>
-  <p>Email: aryansharma83914@gmail.com | Phone: +91-6390606250</p>
-  <p>LinkedIn: linkedin.com/in/aryan-sharma-8776a922a</p>
+  <p>📧 aryansharma83914@gmail.com | 📞 +91-6390606250</p>
+  <p>🔗 linkedin.com/in/aryan-sharma-8776a922a</p>
 </div>
 
-<!-- OBJECTIVE -->
 <div class="section animate fade-left">
 <h2>Career Objective</h2>
 <p>
@@ -105,7 +105,6 @@ Actively preparing for SOC and cybersecurity analyst roles.
 </p>
 </div>
 
-<!-- SKILLS -->
 <div class="section animate fade-right">
 <h2>Technical Skills</h2>
 <div class="badges">
@@ -121,17 +120,74 @@ Actively preparing for SOC and cybersecurity analyst roles.
 </div>
 </div>
 
-<!-- EXPERIENCE -->
 <div class="section animate fade-up">
 <h2>Professional Experience</h2>
 
 <h3>HCL Technologies — Experience Analyst</h3>
 <p><i>October 2025 – Present</i></p>
 <ul>
-<li>Handled L1/L2 incidents using HCL’s internal ticketing tool <b>Service Exchange</b>.</li>
+<li>Handled L1/L2 incidents using HCL’s internal tool <b>Service Exchange</b>.</li>
 <li>Resolved Active Directory issues including access provisioning and account unlocks.</li>
 <li>Troubleshot Windows OS login failures and endpoint configuration issues.</li>
 <li>Ensured SLA-compliant ticket closure and documentation.</li>
 </ul>
 
-<h3>Telepe
+<h3>Teleperformance — Technical Support Executive</h3>
+<p><i>June 2025 – October 2025</i></p>
+<ul>
+<li>Provided chat-based technical support for Microsoft 365 and Windows systems.</li>
+</ul>
+
+<h3>TELUS Digital — Annotation Quality Analyst</h3>
+<p><i>July 2024 – December 2025</i></p>
+<ul>
+<li>Performed quality checks and compliance validation.</li>
+</ul>
+</div>
+
+<div class="section animate fade-left">
+<h2>Cybersecurity Activities</h2>
+<div class="activity">
+  <div class="card">
+    <b>TryHackMe Labs</b>
+    <p>OWASP Top 10, Metasploit, Eternal Blue.</p>
+  </div>
+  <div class="card">
+    <b>Active Directory Practice</b>
+    <p>User provisioning and access control.</p>
+  </div>
+  <div class="card">
+    <b>Windows Security</b>
+    <p>Endpoint troubleshooting and analysis.</p>
+  </div>
+</div>
+</div>
+
+<div class="section animate fade-right">
+<h2>Education</h2>
+<p>
+B.Tech in Computer Science & Engineering (2019–2023)<br>
+Dr. Rammanohar Lohia Avadh University, Ayodhya
+</p>
+</div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".animate");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  items.forEach(item => observer.observe(item));
+});
+</script>
+
+</body>
+</html>
