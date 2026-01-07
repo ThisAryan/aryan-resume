@@ -1,240 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Aryan Sharma | Cybersecurity Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+<meta charset="UTF-8">
+<title>Aryan Sharma | Cybersecurity Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      /* ===== GLOBAL ===== */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #0a0f1f;
-        color: #e6e9f0;
-        font-family: "Segoe UI", Arial, sans-serif;
-      }
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-      * {
-        box-sizing: border-box;
-      }
+* { box-sizing: border-box; }
 
-      a {
-        color: #4f8cff;
-        text-decoration: none;
-      }
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
 
-      a:hover {
-        text-decoration: underline;
-      }
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-      /* ===== LAYOUT ===== */
-      .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px 20px;
-      }
+/* HEADER */
+header {
+  background: #020617;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(56,189,248,0.15);
+}
 
-      /* ===== HEADER ===== */
-      header {
-        text-align: center;
-        margin-bottom: 40px;
-      }
+header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
 
-      header h1 {
-        font-size: 36px;
-        margin-bottom: 10px;
-        color: #ffffff;
-      }
+header p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
 
-      header p {
-        font-size: 14px;
-        color: #9aa4c7;
-      }
+/* SECTIONS */
+section {
+  background: #020617;
+  padding: 26px;
+  border-radius: 16px;
+  margin-top: 28px;
+  box-shadow: 0 0 20px rgba(2,6,23,0.9);
+  transition: all 0.8s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
 
-      /* ===== SECTIONS (VISIBLE BY DEFAULT) ===== */
-      section {
-        background: #111833;
-        padding: 26px;
-        border-radius: 14px;
-        margin-bottom: 28px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+/* animation safe */
+.js section {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.js section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-        /* IMPORTANT: visible by default */
-        opacity: 1;
-        transform: translateY(0);
-        transition: all 0.8s ease;
-      }
+h2 {
+  color: #7dd3fc;
+  margin-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #334155;
+}
 
-      /* ===== ANIMATION ONLY IF JS IS SUPPORTED ===== */
-      .js section {
-        opacity: 0;
-        transform: translateY(40px);
-      }
+h3 {
+  color: #e0f2fe;
+  margin-bottom: 4px;
+}
 
-      .js section.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
+p, li {
+  font-size: 14.8px;
+  line-height: 1.7;
+}
 
-      /* ===== HEADINGS ===== */
-      h2 {
-        color: #4f8cff;
-        margin-top: 0;
-        margin-bottom: 14px;
-        font-size: 21px;
-        border-bottom: 1px solid #1e2a5a;
-        padding-bottom: 6px;
-      }
+ul { padding-left: 20px; }
 
-      /* ===== TEXT ===== */
-      p,
-      li {
-        font-size: 14.8px;
-      }
+.sub {
+  font-size: 13.5px;
+  color: #94a3b8;
+}
 
-      ul {
-        padding-left: 20px;
-      }
+/* BADGES */
+.badges span {
+  display: inline-block;
+  background: #1e293b;
+  color: #38bdf8;
+  padding: 6px 14px;
+  margin: 6px 6px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
 
-      li {
-        margin-bottom: 8px;
-      }
+/* CARDS */
+.activity {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+.card {
+  background: #020617;
+  border-left: 4px solid #38bdf8;
+  padding: 18px;
+  border-radius: 12px;
+}
+</style>
+</head>
 
-      .sub {
-        color: #a3aed0;
-        font-size: 13.5px;
-      }
+<body>
 
-      .see-more {
-        color: #9aa4c7;
-        font-style: italic;
-        margin-top: 8px;
-      }
-    </style>
-  </head>
+<script>
+document.documentElement.classList.add("js");
+</script>
 
-  <body>
-    <!-- Enable animation safely -->
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
+<div class="container">
 
-    <div class="container">
-      <header>
-        <h1>Aryan Sharma</h1>
-        <p>
-          Kanpur, Uttar Pradesh | +91-6390606250 | aryansharma83914@gmail.com<br />
-          <a href="https://www.linkedin.com/in/aryan-sharma-8776a922a"
-            >LinkedIn</a
-          >
-          |
-          <a href="https://thisaryan.github.io/aryan-resume/">Portfolio</a>
-        </p>
-      </header>
+<header>
+  <h1>Aryan Sharma</h1>
+  <p><b>Cybersecurity & IT Support Professional</b></p>
+  <p>Kanpur, Uttar Pradesh</p>
+  <p>📧 aryansharma83914@gmail.com | 📞 +91-6390606250</p>
+  <p>
+    <a href="https://www.linkedin.com/in/aryan-sharma-8776a922a">LinkedIn</a> |
+    <a href="https://thisaryan.github.io/aryan-resume/">Portfolio</a>
+  </p>
+</header>
 
-      <section>
-        <h2>Professional Summary</h2>
-        <p>
-          Career-transitioning cybersecurity professional with a strong
-          foundation in networking, operating systems, and security
-          fundamentals. Hands-on experience through TryHackMe labs, real-time
-          monitoring, and technical support roles. Actively transitioning into
-          cybersecurity with a SOC-oriented approach.
-        </p>
-      </section>
+<section>
+<h2>Career Objective</h2>
+<p>
+Cybersecurity-focused IT professional with hands-on experience in Service Desk operations,
+Active Directory administration, Windows endpoint troubleshooting, and incident management.
+Actively transitioning into SOC and cybersecurity analyst roles with real-world exposure
+to enterprise IT environments.
+</p>
+</section>
 
-      <section>
-        <h2>Core Skills</h2>
-        <ul>
-          <li>Networking Fundamentals (TCP/IP, DNS, OSI)</li>
-          <li>Cybersecurity Fundamentals & Threat Awareness</li>
-          <li>Active Directory & Log Analysis</li>
-          <li>Microsoft 365 & Windows OS</li>
-          <li>Incident Monitoring & Escalation</li>
-        </ul>
-      </section>
+<section>
+<h2>Technical Skills</h2>
+<div class="badges">
+<span>Active Directory</span>
+<span>Windows OS</span>
+<span>Service Desk</span>
+<span>Incident Management</span>
+<span>Access Control</span>
+<span>ITIL Basics</span>
+<span>Networking Fundamentals</span>
+<span>Log Analysis</span>
+<span>SIEM Fundamentals</span>
+</div>
+</section>
 
-      <section>
-        <h2>Cybersecurity Activities & Hands-on Labs</h2>
-        <ul>
-          <li>TryHackMe labs on Networking, Linux, Windows</li>
-          <li>OWASP Top 10 vulnerability practice</li>
-          <li>Metasploit framework usage</li>
-          <li>EternalBlue SMB exploitation lab</li>
-        </ul>
-        <p class="see-more">See more: Continuous hands-on SOC-focused labs.</p>
-      </section>
+<section>
+<h2>Professional Experience</h2>
 
-      <section>
-        <h2>Professional Experience</h2>
-        <p>
-          <strong>Teleperformance — Technical Support Executive</strong><br />
-          <span class="sub">June 2025 – Present</span>
-        </p>
-        <ul>
-          <li>Microsoft 365 and Windows OS support</li>
-          <li>Chat-based troubleshooting</li>
-        </ul>
+<h3>HCL Technologies — Experience Analyst</h3>
+<p class="sub">October 2025 – Present</p>
+<ul>
+<li>Working as a Service Desk Analyst handling L1/L2 incidents using HCL internal tool <b>Service Exchange</b>.</li>
+<li>Performed Active Directory tasks including user provisioning, password resets, account unlocks, and access permissions.</li>
+<li>Troubleshot Windows OS issues such as login failures, endpoint errors, and system configuration problems.</li>
+<li>Conducted incident analysis, root cause identification, and ticket resolution within SLA guidelines.</li>
+<li>Maintained accurate documentation to support audits and security compliance.</li>
+</ul>
 
-        <p>
-          <strong>TELUS Digital — Annotation Quality Analyst</strong><br />
-          <span class="sub">July 2024 – Dec 2025</span>
-        </p>
-        <ul>
-          <li>Maintained ML annotation quality</li>
-        </ul>
-      </section>
+<h3>Teleperformance — Technical Support Executive</h3>
+<p class="sub">June 2025 – October 2025</p>
+<ul>
+<li>Provided chat-based technical support for Microsoft 365 and Windows OS.</li>
+<li>Resolved access, configuration, and system-related user issues.</li>
+<li>Escalated complex or security-sensitive cases appropriately.</li>
+</ul>
 
-      <section>
-        <h2>Projects</h2>
-        <p><strong>Decentralized Drive</strong> — React, Solidity</p>
-        <ul>
-          <li>Blockchain-based secure file storage</li>
-          <li>MetaMask authentication</li>
-        </ul>
-      </section>
+<h3>TELUS Digital — Annotation Quality Analyst</h3>
+<p class="sub">July 2024 – December 2025</p>
+<ul>
+<li>Ensured quality validation of ML datasets.</li>
+<li>Maintained compliance with client documentation standards.</li>
+</ul>
+</section>
 
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>Google Cybersecurity Certificate — 2024</li>
-          <li>Blockchain Development — Internshala</li>
-        </ul>
-      </section>
+<section>
+<h2>Cybersecurity Activities</h2>
+<div class="activity">
+<div class="card">
+<b>TryHackMe Labs</b>
+<p>Hands-on practice with OWASP Top 10, Metasploit, EternalBlue, networking & Linux basics.</p>
+</div>
+<div class="card">
+<b>Active Directory Practice</b>
+<p>User management, access control, and troubleshooting in enterprise-like setups.</p>
+</div>
+<div class="card">
+<b>Windows Security</b>
+<p>Endpoint troubleshooting, login issues, and system misconfigurations.</p>
+</div>
+</div>
+</section>
 
-      <section>
-        <h2>Education</h2>
-        <p>
-          <strong>B.Tech — Computer Science</strong><br />
-          IET, Dr. RML Avadh University (2019–2023)
-        </p>
-      </section>
+<section>
+<h2>Certifications</h2>
+<ul>
+<li>Google Cybersecurity Professional Certificate — 2024</li>
+<li>Blockchain Development — Internshala, 2023</li>
+</ul>
+</section>
 
-      <section>
-        <h2>Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>Hindi</li>
-        </ul>
-      </section>
-    </div>
+<section>
+<h2>Projects</h2>
+<ul>
+<li><b>Decentralized Drive</b> — Secure blockchain-based file storage using React & Solidity.</li>
+</ul>
+</section>
 
-    <script>
-      const sections = document.querySelectorAll("section");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("show");
-            }
-          });
-        },
-        { threshold: 0.2 }
-      );
+<section>
+<h2>Education</h2>
+<p>
+B.Tech in Computer Science & Engineering (2019–2023)<br>
+Dr. Rammanohar Lohia Avadh University, Ayodhya
+</p>
+</section>
 
-      sections.forEach((section) => observer.observe(section));
-    </script>
-  </body>
+</div>
+
+<script>
+const sections = document.querySelectorAll("section");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
 </html>
+
