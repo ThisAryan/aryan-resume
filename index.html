@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aryan Sharma | Cybersecurity Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* ===== GLOBAL ===== */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0a0f1f;
+        color: #e6e9f0;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      a {
+        color: #4f8cff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ===== LAYOUT ===== */
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      header p {
+        font-size: 14px;
+        color: #9aa4c7;
+      }
+
+      /* ===== SECTIONS (VISIBLE BY DEFAULT) ===== */
+      section {
+        background: #111833;
+        padding: 26px;
+        border-radius: 14px;
+        margin-bottom: 28px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+
+        /* IMPORTANT: visible by default */
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.8s ease;
+      }
+
+      /* ===== ANIMATION ONLY IF JS IS SUPPORTED ===== */
+      .js section {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      .js section.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ===== HEADINGS ===== */
+      h2 {
+        color: #4f8cff;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 21px;
+        border-bottom: 1px solid #1e2a5a;
+        padding-bottom: 6px;
+      }
+
+      /* ===== TEXT ===== */
+      p,
+      li {
+        font-size: 14.8px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .sub {
+        color: #a3aed0;
+        font-size: 13.5px;
+      }
+
+      .see-more {
+        color: #9aa4c7;
+        font-style: italic;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Enable animation safely -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <div class="container">
+      <header>
+        <h1>Aryan Sharma</h1>
+        <p>
+          Kanpur, Uttar Pradesh | +91-6390606250 | aryansharma83914@gmail.com<br />
+          <a href="https://www.linkedin.com/in/aryan-sharma-8776a922a"
+            >LinkedIn</a
+          >
+          |
+          <a href="https://thisaryan.github.io/aryan-resume/">Portfolio</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          Career-transitioning cybersecurity professional with a strong
+          foundation in networking, operating systems, and security
+          fundamentals. Hands-on experience through TryHackMe labs, real-time
+          monitoring, and technical support roles. Actively transitioning into
+          cybersecurity with a SOC-oriented approach.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Networking Fundamentals (TCP/IP, DNS, OSI)</li>
+          <li>Cybersecurity Fundamentals & Threat Awareness</li>
+          <li>Active Directory & Log Analysis</li>
+          <li>Microsoft 365 & Windows OS</li>
+          <li>Incident Monitoring & Escalation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cybersecurity Activities & Hands-on Labs</h2>
+        <ul>
+          <li>TryHackMe labs on Networking, Linux, Windows</li>
+          <li>OWASP Top 10 vulnerability practice</li>
+          <li>Metasploit framework usage</li>
+          <li>EternalBlue SMB exploitation lab</li>
+        </ul>
+        <p class="see-more">See more: Continuous hands-on SOC-focused labs.</p>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+        <p>
+          <strong>Teleperformance — Technical Support Executive</strong><br />
+          <span class="sub">June 2025 – Present</span>
+        </p>
+        <ul>
+          <li>Microsoft 365 and Windows OS support</li>
+          <li>Chat-based troubleshooting</li>
+        </ul>
+
+        <p>
+          <strong>TELUS Digital — Annotation Quality Analyst</strong><br />
+          <span class="sub">July 2024 – Dec 2025</span>
+        </p>
+        <ul>
+          <li>Maintained ML annotation quality</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <p><strong>Decentralized Drive</strong> — React, Solidity</p>
+        <ul>
+          <li>Blockchain-based secure file storage</li>
+          <li>MetaMask authentication</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Google Cybersecurity Certificate — 2024</li>
+          <li>Blockchain Development — Internshala</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong>B.Tech — Computer Science</strong><br />
+          IET, Dr. RML Avadh University (2019–2023)
+        </p>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
+  </body>
+</html>
